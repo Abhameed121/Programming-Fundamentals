@@ -1,24 +1,19 @@
-
-	#include <stdio.h>
+		
+	#include <stdio.h> 
+	int main( ) 
+	{ 
 	
-	int main(){
+	int i ;
+	 char name[30] = "Klinsman" ; 
+; /* store base address of string */ 
+	
+	 printf ( "%s\n", name[ i ] ) ; 
+	 printf ( "%s\n", *( name + i )  ) ;
+	 printf ( "%s\n",*(i +name)  ) ; 
+	 printf ( "%s\n", i[name]) ;  
+ 
+	
+	 return 0 ; 
+	}
 		
-		int hours  , i =0  ;
-		float bill ;
-		
-		while(i <10){
-			
-			printf("\n\t\t\t enter the hours of employe %d:",i=i+1);
-			scanf("%d",&hours);
-			
-			if(hours > 40){
-				bill = (hours - 40.0) * 12.0 ;
-				printf("\n\t\t\t Over time of :%0.2f",bill);
-		}
-			else {
-				  printf("\n\t\t\t No over time :");
-			}		
-		}
-		      return 0 ;
-		}
 		
